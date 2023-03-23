@@ -8,13 +8,18 @@ body{
     background-color: #000000;
     color: #ffffff;
 }
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 1em;
+}
+
+.logo img {
+    margin-right: 1em;}
 #header{
     width: 100%;
     height: 130vh;
-    background-color: #000000;
     color: #ffffff;
-    font-size: 30px;
-    font-weight: 600;
     background-image: url("images/bacground_image.png");
     background-size: cover;
     background-position: right
@@ -31,8 +36,6 @@ body{
    
 }
 nav{
-    
-   
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,10 +43,9 @@ nav{
     flex-wrap: wrap;
     
 }
-.logo{
-    width: 100px;
-   
-}
+
+    
+
 nav ul li{
     display: inline-block;
     list-style: none;
@@ -56,13 +58,35 @@ nav ul li a{
     text-decoration: none;
     padding: 18px;
     position: relative;
+    font-size: 18px;
+
 }
 nav ul li a::after{
     content: '';
     position: absolute;
-    width: 100%;
+    width: 0;
     height: 3px;
-    background-color: #ffffff;
+    background-color: #ff004f;
     left: 0;
     bottom: 7px;
+    transition: 0.5s;
+
+}
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+
+.header-text {
+    margin-top: 0em;
+    margin-left: 9.7em;
+
+}
+
+.header-text p {
+    font-size: 1em;
+    margin: 0;
+}
+.header-text h1 span{
+    color: #ff004f;
 }
