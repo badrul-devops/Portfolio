@@ -4,8 +4,7 @@ pipeline{
     stages{
         stage('Checkout'){
             steps{
-                git 'https://github.com/badrul-devops/Portfolio.git'
-
+              checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/badrul-devops/Portfolio.git']])
         }
         stage('Build'){
             steps{
