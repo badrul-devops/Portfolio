@@ -18,19 +18,18 @@ body{
     margin-right: 1em;}
 #header{
     width: 100%;
-    height: 130vh;
+    height: 105vh;
     color: #ffffff;
     background-image: url("images/bacground_image.png");
-    background-size: cover;
-    background-position: right
+    background-size: 70% 85%;
+    background-position: right;
+    background-repeat: no-repeat;
+    
     
 }
 .container{
     width: 100%;
-    
     padding: 10px 10%;
-    
-    
     justify-content: left;
     align-items: left;
    
