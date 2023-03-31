@@ -1,6 +1,6 @@
 pipeline{
     agent any
-    
+
     stages{
         stage('Checkout'){
             steps{
@@ -14,7 +14,7 @@ pipeline{
         }
         stage('Test'){
             steps{
-                sh 'docker run myportfolio'
+                sh 'docker run -d -p 8090:80 -p 443:443 myportfolio'
             }
         }
     }
